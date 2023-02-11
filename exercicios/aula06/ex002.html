@@ -16,10 +16,9 @@
     <h1>Olá, Mundo!!</h1>
     <p>Já me livrei da maldição.</p>
 
-    <script>
-        window.alert('Olá!!'); 
-        window.confirm('Está gostando de JS?'); //janela com botão ok e cancelar
-        window.prompt('Qual é seu nome?');  //vai perguntar o nome
+    <script> 
+        var nome = window.prompt('Qual é seu nome?');  //vai perguntar o nome
+        window.alert('É um grnade prazer em te conhecer,' + nome + '!!');  //Concatenação
     </script>
 </body>
 </html>
