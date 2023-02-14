@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 002</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font: normal 15pt arial;
+        }
+
+        input{
+            width: 100px;
+            height: 50px;
+            background-color: #2D3138;
+            color: #eb9306fa;
+            cursor: pointer;
+        }
+
+        input:hover{
+            background-color: #eb9306fa;
+            color: #2D3138 ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Boas-vindas</h1>
+    <input type="button" value="Inicie o desafio" onclick="botao()">
+    <script>
+        function botao(){
+            var nome = window.prompt('Qual seu nome?')
+            var idade = window.prompt('Qual a sua idade?')
+            window.alert(`Acabei de conhecer o (a) ${nome} que tem ${idade} anos de idade!`)
+        }
+
+    </script>
+</body>
+</html>
