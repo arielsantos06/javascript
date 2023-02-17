@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    O país em que você nasceu: <input type="text" name="ypais" id="ypais">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="info">
+
+    </div>
+    <script>
+        function enviar(){
+            var país = window.document.querySelector('input#ypais')
+            var info = window.document.querySelector('div#info')
+            var n1 = país.value
+             if (n1 == 'Brasil'|| n1 == 'brasil'){
+                info.innerHTML = `Você é Brasileiro!`
+            }else{
+                info.innerHTML = `Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
