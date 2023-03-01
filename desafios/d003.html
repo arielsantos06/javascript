@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 003</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(59, 59, 167), rgb(104, 57, 65));
+            color: white;
+        }
+
+        input{
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 7px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Antes e depois</h1>
@@ -12,10 +25,10 @@
 
     <script>
         function botao(){
-           var n1 = window.prompt('Digite um número:')
-           var n2 = window.alert('ola')
-           var n3 = n1 < n2
-           window.prompt(`O número anterior de ${n1} é ${n3}`)
+           var n1 = Number (window.prompt('Digite um número:'))
+           var s = n1 + 1
+           window.alert(`Um número antes de ${n1} é ${n1 - 1}, e um número depois é ${s}.`)
+           
         }
     </script>
 </body>
